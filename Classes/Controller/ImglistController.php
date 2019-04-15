@@ -36,7 +36,7 @@ class ImglistController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControll
 
 	public function listPageAction()
 	{
-		$pid = $this->cObjectData['pid'];
+		$pid = $this->cObjectData['pid'] ?? $GLOBALS['TSFE']->id;
 
 		$files = $this->fileRepository->findAllByPage($pid, $this->tableNames, $this->fieldNames, $this->extensions, $this->showEmpty);
 
