@@ -1,0 +1,40 @@
+{
+  "name": "X-Tender/typo3-aim_imgcopyright",
+  "type": "typo3-cms-extension",
+  "description": "Adds copyright-fields to Files, to use in your templates for image-license-information.",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "article",
+    "copyright"
+  ],
+  "authors": [
+    {
+      "name": "Andi Platen",
+      "role": "Developer",
+      "homepage": "https://www.code-department.de/"
+    },
+    {
+      "name": "Paul Kamma",
+      "role": "Developer",
+      "homepage": "https://codeplaylove.de/"
+    }
+  ],
+  "require": {
+    "typo3/cms-core": "^8.7.13|| ^9.5.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Alm\\AlmImgcopyright\\": "Classes"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "slim"
+    },
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  }
+}
